@@ -1,0 +1,91 @@
+/*Styling body*/
+body{
+    background-color: lightgray;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+body{
+    background:url('../images/marvel-bg.jpg');
+    background-size: cover;
+    background-position:center ;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+/*STyling fav heros*/
+#fav-hero-container{
+    position: fixed;
+    top: 100px;
+    bottom: 0;
+    width: 90%;
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    background-color: grey;
+    border: 2px solid black;
+    display: flex;
+    justify-content:space-between;
+    flex-wrap: wrap;
+}
+.favImage{
+    margin-top:2rem;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 10rem;
+}
+a{
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: red;
+    position: fixed;
+    top: 2rem;
+    bottom: 0;
+    height: 3rem;
+    width: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+a:hover{
+    color: white;
+}
+#fav-hero-container div{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+#fav-hero-container div button{
+    outline: none;
+    border: none;
+    margin-bottom: 20px;
+}
+
+#fav-hero-container div button:hover{
+    box-shadow: blueviolet 1px 1px 5px 1px;
+}
+
+div a{
+    font-size: 1rem;
+    text-decoration: none;
+    display: block;
+    width: 11.5rem;
+}
+.removeFav{
+    width: 5rem;
+    border: 2px solid rgba(0,0,0,.2);
+    border-radius: 5rem;
+    color: white;
+    font-size: 0.75rem;
+    padding: .5rem;
+}
+.removeFav:hover{
+    background-color: black;
+    cursor: pointer;
+}

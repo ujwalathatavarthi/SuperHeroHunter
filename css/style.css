@@ -1,0 +1,148 @@
+/* Styles for the body */
+body{
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    font-family: cursive;
+}
+
+body{
+    background:url('../images/marvel-bg.jpg');
+    background-size: cover;
+    background-position:center ;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    top: 1px;
+    bottom: 0;
+    color: #f1f1f1;;
+    padding: 20px;
+}
+
+/* handling heading section */
+.head{
+    width: 100vw;
+    height: 20vh;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    color: black;
+    font-size: 1rem;
+}
+.head a{
+    height: 8vh;
+    width: 25vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: black;
+    margin-left: 100px;
+}
+
+.head h1:hover{
+    color: red;
+}
+.head a:hover{
+    color: red;
+}
+#data-container{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    margin-top: 5rem;
+}
+
+/* search section */
+#searchHero{
+    text-align: center;
+    background-color:white;
+    width: 30vw;
+    height: 7vh;
+    border-style: none;
+    border-left: 1px solid rgba(255,255,255,.8);
+    border-right: 1px solid rgba(255,255,255,.8);
+    font-size: 1rem;
+    font-family:cursive;
+    border-radius: 2rem;
+    color: black;
+    text-align: center;
+    text-transform: capitalize;
+}
+#searchHero:hover{
+    border-radius: 2rem;
+    background-color: white;
+    color: black;
+}
+.image-size{
+    width: 70px;
+    height: 70px;
+    margin-left: 2rem;
+    border-radius: 2rem;
+}
+
+/* contain superheroes */
+.super-contain{
+    display: flex;
+    justify-content: center;
+    align-items: first baseline;
+    overflow: scroll;
+    height: 50vh;
+    width: 40%;
+    padding-top: 2rem;
+    margin-top: 1rem;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+ul li{
+    width: 60vh;
+    height:50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+    margin-bottom: .5rem;
+    background-color: white; 
+    position: relative;
+    left:-1rem;
+}
+ul li:hover{
+    background-color: grey; 
+}
+#delFav{
+    color: red;
+    font-size: 25px;
+}
+#delFav:hover{
+    cursor:pointer;
+}
+#addFav:hover{
+    cursor:pointer;
+}
+#addFav{
+    font-size: 25px;
+    color: lightgray;
+}
+.search-item a{
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    text-shadow: none;
+    margin:1rem;
+}
